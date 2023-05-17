@@ -2,34 +2,30 @@ import { BrowserRouter as Router, Routes, Route, Redirect } from 'react-router-d
 import React, { useState } from 'react';
 import './index.css';
 
-
-
-import AdminPanel from './AdminPanel';
-import ProductList from './ProductList';
+import AdminPanel from './Admin/AdminPanel';
+import ProductList from './ECommerce/ProductList';
 import Home from './Home';
-import List from './List';
-import ProductInfo from './ProductInfo';
-import Basket from './Basket';
-import LogIn from './LogIn';
-import SignUp from './SignUp';
-import NewPassword from './NewPassword';
-import Profile from './Profile';
-import Search from './Search';
-import Favorite from './Favorite';
-import Blog from './Blog';
-import AdminSearch from './AdminSearch';
-import AdminProductList from './AdminProductList'
-import AdminAllProductList from './AdminAllProductList'
-import AdminAddProduct from './AdminAddProduct'
+import List from './ECommerce/List';
+import ProductInfo from './ECommerce/ProductInfo';
+import Basket from './ECommerce/Basket';
+import LogIn from './ECommerce/LogIn';
+import SignUp from './ECommerce/SignUp';
+import NewPassword from './ECommerce/NewPassword';
+import Profile from './ECommerce/Profile';
+import Search from './ECommerce/Search';
+import Favorite from './ECommerce/Favorite';
+import Blog from './ECommerce/Blog';
+import AdminSearch from './Admin/AdminSearch';
+import AdminProductList from './Admin/AdminProductList'
+import AdminAddProduct from './Admin/AdminAddProduct'
 
-import CreateYourself from './CreateYourself' 
-import Stock from './Stock';
-import BlogDetail from './BlogDetail';
-import EditProduct from './EditProduct';
-import EditBlog from './EditBlog';
-import EditCategory from './EditCategory';
-import Navbars from './Navbars';
-import ProductListByCategory from './ProductListByCategory';
+import CreateYourself from './ECommerce/CreateYourself' 
+import Stock from './Admin/Stock';
+import BlogDetail from './ECommerce/BlogDetail';
+import EditProduct from './Admin/EditProduct';
+import EditBlog from './Admin/EditBlog';
+import EditCategory from './Admin/EditCategory';
+import ProductListByCategory from './Admin/ProductListByCategory';
 
 function App() {
   
@@ -53,7 +49,6 @@ function App() {
         <Route path="/Blog" element={<Blog/>} />
         <Route path="/AdminSearch" element={<AdminSearch/>} />
         <Route path="/AdminProductList" element={<AdminProductList/>} />
-        <Route path="/AdminAllProductList" element={<AdminAllProductList/>} />
         <Route path="/AdminAddProduct" element={<AdminAddProduct/>} />
 
         <Route path="/CreateYourself" element={<CreateYourself/>} />

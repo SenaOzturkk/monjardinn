@@ -1,7 +1,7 @@
 import React from "react";
-import Card from './Card'; // Card bileşenini import edin
-import Carousel1 from "./Carousel1";
-import WithNavbar from './WithNavbar'; 
+import Card from './Component/Card'; // Card bileşenini import edin
+import Carousel1 from "./Component/Carousel1";
+import WithNavbar from './Component/WithNavbar'; 
 
 const Home = () => {
   const data = [
